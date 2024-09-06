@@ -10,5 +10,5 @@ async function getQuote () {
   author.textContent = data.character.name;
 }
 
-
+newBtn.addEventListener("click", getQuote);
 
