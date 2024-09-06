@@ -5,4 +5,6 @@ const author = document.querySelector("#author")
 async function getQuote (url) {
   const response = await fetch(url);
   let data = await response.json();
+  quote.textContent = data.sentence;
+  author.textContent = data.character.name;
 }
