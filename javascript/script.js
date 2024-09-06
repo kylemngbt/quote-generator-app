@@ -17,5 +17,5 @@ function tweet() {
 
 getQuote();
 newBtn.addEventListener("click", getQuote);
-
+tweetBtn.addEventListener("click", tweet);
 
