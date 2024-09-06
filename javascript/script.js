@@ -12,7 +12,7 @@ async function getQuote () {
 }
 
 function tweet() {
-  window.open("https://x.com/intent/tweet?text=Hello%20world")
+  window.open("https://x.com/intent/tweet?text=" + quote.textContent + "   ― " + author.textContent, "Tweet Window", "width=600, height=300")
 }
 
 getQuote();
